@@ -1,19 +1,28 @@
 {
-  "name": "finance-kolam-ikan",
+  "name": "kolam-ikan-api",
   "version": "1.0.0",
   "description": "Sistem Keuangan & Operasional Kolam Ikan Nila",
-  "main": "server/index.js",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && nodemon index.js",
-    "client": "cd client && npm run dev",
-    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": ["fish-pond", "finance", "management"],
-  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "docx": "^8.5.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.7"
+  },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "nodemon": "^3.0.3"
   }
 }
+
 
